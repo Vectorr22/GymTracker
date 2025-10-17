@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="accent_blue">#FF007bff</color>
+    <color name="semi_blue">#FF18314b</color>
+
+    <color name="background_black">#ff121212</color>
+    <color name="onBlack">#FF1e1e1e</color>
+    <color name="subtitle">#ADADAD</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
