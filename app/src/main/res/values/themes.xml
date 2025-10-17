@@ -1,9 +1,72 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.GymTracker" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!--
+    Base application theme. This is the main theme for your app,
+    which will be applied to your MainActivity in the AndroidManifest.xml
+    -->
+    <style name="Theme.WorkoutTracker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--
+        Primary Brand Color. This is used for key components like buttons, active states,
+        and the FAB.
+        -->
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorPrimaryVariant">@color/accent_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!--
+        Secondary Brand Color. In your design, the secondary color is not heavily
+        used, so we can also map it to your primary accent for consistency.
+        -->
+        <item name="colorSecondary">@color/accent_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!--
+        Background and Surface Colors. These define the overall look of the app's
+        canvas and the cards on top of it.
+        -->
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+
+        <!--
+        Text and Icon Colors. Defines the default color of text and icons on top of
+        the background and surfaces.
+        -->
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!--
+        Status Bar Color. We set this to the background color to create a seamless,
+        immersive look.
+        -->
+        <item name="android:statusBarColor">@color/background_dark</item>
+
+        <!--
+        Control colors. Ensures that things like un-checked checkboxes are visible
+        against the dark background.
+        -->
+        <item name="colorControlNormal">@color/text_secondary</item>
+
+        <!--
+        Custom styles for specific components to match the UI mockup.
+        -->
+        <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
     </style>
 
-    <style name="Theme.GymTracker" parent="Base.Theme.GymTracker" />
+    <!-- Custom Card Style -->
+    <style name="Widget.App.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/surface_dark</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
 </resources>
